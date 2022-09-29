@@ -5,11 +5,14 @@
     "react-scripts": "^5.0.1"
   },
   "name": "fylo-landing-page-with-two-column-layout-master",
+  "homepage": "https://JRobera.github.io/Fylo-landing-page-with-two-column-layout",
   "description": "![Design preview for the Fylo landing page with two column layout challenge](./design/desktop-preview.jpg)",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "eject": "react-scripts eject"
