@@ -13,10 +13,11 @@
 nav {
     flex: 1;
     align-self: center;
-    /* position: relative; left: 30%; width: 20%; */
 }
 section > div {width: 50%;}
+
 .logo {flex: 1;}
+
 .nav {
     display: flex;
     list-style: none;
@@ -28,14 +29,25 @@ section > div {width: 50%;}
     padding: 59px;
     height: 500px;
 }
+.form-one {display: flex;}
+
+.form-one .input-cont {width: 45%;}
+
 .form-one input {    
     padding: 10px 15px;
     outline: none;
-    width: 45%;
+    width: 100%;
 }
-.form-one button {    
+.form-one .error-message {
+    color: rgba(255, 0, 0, 0.60); 
+    font-size: 12px;
+    text-align: left; 
+    margin-top: 5px;
+}
+.form-one button {   
+    align-self: start; 
     font-size: 11px;
-    margin-left: 12px;
+    margin-left: 46px;
     padding: 13px 45px;
     color: white;
     border: none;
@@ -53,7 +65,7 @@ section > div {width: 50%;}
     width: 90%;
     line-height: 1.5;
     font-size: 15px;
-    padding: 10px 0;
+    padding: 15px 0;
     color: hsl(243, 87%, 12%);
     font-weight: bold;
 }
@@ -85,6 +97,11 @@ section > div {width: 50%;}
     font-weight: bold;
     display: inline-block;
 }
+.btnexplore img {
+    margin-left: 5px; 
+    height: 20px; 
+    width: 20px; }
+
 .detail {margin-top: 20px;}
 .avatar {
     float: left;
@@ -95,6 +112,7 @@ section > div {width: 50%;}
 }
 
 .name {font-size: 12px;}
+
 .company {font-size: 10px;}
 
 .bottom-section {
@@ -106,15 +124,26 @@ section > div {width: 50%;}
 .call-to-action > h1 {
     color: white !important;
 }
-.call-to-action p {font-weight: lighter; color: white;}
+.call-to-action p {
+    font-weight: lighter; 
+    color: white;}
 
+.form-two .input-cont {
+    width: 88%;
+    margin: auto;
+}
 .form-two input::placeholder {color: hsl(0, 0%, 75%);}
+
 .form-two input {
-    margin-left: 30px;
     padding: 10px 15px;
     width: 80%;
     border: none;
     border-radius: 3px;
+}
+.form-two .error-message {
+    margin-top: 5px;
+    font-size: 12px;
+    color: #ffffffd1;
 }
 .form-two button {
     font-size: 11px;
@@ -163,10 +192,15 @@ footer .linkes {
     margin-top: 75px;
     position: relative;
     left: 58px;
+    filter: invert(1);
 }
+/* .sociales a img {
+    filter: brightness(0) saturate(100%);
+} */
 @media (max-width: 800px) {
 
     .header { gap: 0%; padding: 20px;}
+   
     .top-section, .mid-section, .bottom-section { 
         padding: 20px; 
         display: flex;
@@ -176,37 +210,41 @@ footer .linkes {
         height: auto; 
         padding-bottom: 90px;
     }
-
-    /* .top-section {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: auto;
-    } */
     
     .top-section > div {text-align: center;}
+
     .title, .description {margin: auto;}
+    
     .title {width: 79%; font-size: 20px;}
+    
     .description {margin: 20px auto; width: 100%;}
+    
     .form-one {
-        display: flex;
         flex-direction: column;
         align-items: center;
         gap: 15px;
     }
+    
+    .form-one .input-cont {width: 100%;}
+    
     .form-one input {width: 91%;}
+    
     .form-one button {width: 100%; margin: auto;}
 
-    .mid-section .title {font-size: 15px; margin-top: 40px;}
+    .mid-section .title {
+        font-size: 15px; 
+        margin-top: 40px;}
+    
     .mid-section .description {
         color: hsl(0, 0%, 75%);
         font-weight: normal;
     }
     .btnexplore {transform: translate(50%, 50%);}
+    
     .card {padding: 30px; width: auto;}
 
     .bottom-section {padding-top: 55px;}
+    
     .call-to-action { text-align: center;}
 
     .form-two {
@@ -216,13 +254,13 @@ footer .linkes {
     }
 
     .form-two input {
+        width: -webkit-fill-available;
         margin: auto;
     }
 
     .form-two button {
         width: 88%;
         margin: 15px auto;
-
     }
 
     section > div { width: 100%}

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Title from "./Title";
 import Para from "./Para";
 import Form from "./Form";
@@ -31,6 +31,16 @@ function HeadTop() {
 }
 
 function HeadMid() {
+    const [isMouseOver, setIsMouseOver] = useState(false);
+    function handleMouseOver() {
+        setIsMouseOver(true);
+        document.querySelector(".btnexplore img").style="filter: invert(93%) sepia(15%) saturate(561%) hue-rotate(105deg) brightness(97%) contrast(90%);";
+    }
+    function handleMouseOut() {
+        setIsMouseOver(false);
+        document.querySelector(".btnexplore img").style="filter: none;";
+
+    }
     return (
         <section className="mid-section">
             <img className="illustration" src="../images/illustration-2.svg" alt="illustration-2" />
@@ -46,7 +56,12 @@ function HeadMid() {
                     content="Securely share files and folders with friends, family and colleagues for 
                             live collaboration. No email attachments required!"
                 />
-                <a href="#" className="btnexplore">See how Fylo works <img src="../images/icon-arrow.svg" alt="arrow" /></a>
+                <a href="#" className="btnexplore" 
+                         style={ isMouseOver ? {color: "#b0ece0", borderBottom: "1px solid #b0ece0"} : null} 
+                         onMouseOver={handleMouseOver} 
+                         onMouseOut={handleMouseOut}>See how Fylo works 
+                         <img src="../images/icon-arrow.svg" alt="arrow" />
+                </a>
                 <Card />
             </div>
         </section>

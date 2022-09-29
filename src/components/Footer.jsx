@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import Logo from "./Logo";
 import Contact from "./Contact.jsx";
 import Icon from "./Icon.jsx";
+import Linkes from "./Linkes";
 
 function Footer(){
+
     return (
         <footer>
             <div>
@@ -16,16 +18,16 @@ function Footer(){
             <div className="linkes">
 
                 <div>
-                    <p><a href="#">About Us</a></p>
-                    <p><a href="#">Jobs</a></p>
-                    <p><a href="#">Press</a></p>
-                    <p><a href="#">Blog</a></p>
+                    <Linkes linkName="About Us" />
+                    <Linkes linkName="Jobs" />
+                    <Linkes linkName="Press" />
+                    <Linkes linkName="Blog" />
                 </div>
 
                 <div>
-                    <p><a href="#">Contact Us</a></p>
-                    <p><a href="#">Terms</a></p>
-                    <p><a href="#">Privacy</a></p>
+                    <Linkes linkName="Contact Us" />
+                    <Linkes linkName="Terms" />
+                    <Linkes linkName="Privacy" />
                 </div>
 
             </div>
