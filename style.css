@@ -73,7 +73,7 @@ section > div {width: 50%;}
 .mid-section {
     padding: 59px;
     height: 500px;
-    background-image: url(../images/bg-curve-desktop.svg);
+    background-image: url(bg-curve-desktop.svg);
     background-repeat: no-repeat;
     background-color: #f9f8fe;
 }
