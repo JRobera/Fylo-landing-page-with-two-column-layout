@@ -5,7 +5,7 @@ import Navigation from "./Navigation";
 function Header(){
     return (
         <div className="header">
-            <Logo source="../images/logo.svg"/>
+            <Logo source="logo.svg"/>
             <Navigation />
         </div>
     )

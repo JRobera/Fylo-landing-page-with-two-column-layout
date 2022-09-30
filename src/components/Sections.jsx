@@ -9,7 +9,7 @@ function HeadTop() {
     return(
         <section className="top-section">
             
-            <img className="illustration" src="../images/illustration-1.svg" alt="illustration-1"/>
+            <img className="illustration" src="illustration-1.svg" alt="illustration-1"/>
             <div>
                 
                 <Title 
@@ -43,7 +43,7 @@ function HeadMid() {
     }
     return (
         <section className="mid-section">
-            <img className="illustration" src="../images/illustration-2.svg" alt="illustration-2" />
+            <img className="illustration" src="illustration-2.svg" alt="illustration-2" />
             <div>
                 <Title 
                     content="Stay productive, wherever you are"
@@ -60,7 +60,7 @@ function HeadMid() {
                          style={ isMouseOver ? {color: "#b0ece0", borderBottom: "1px solid #b0ece0"} : null} 
                          onMouseOver={handleMouseOver} 
                          onMouseOut={handleMouseOut}>See how Fylo works 
-                         <img src="../images/icon-arrow.svg" alt="arrow" />
+                         <img src="icon-arrow.svg" alt="arrow" />
                 </a>
                 <Card />
             </div>

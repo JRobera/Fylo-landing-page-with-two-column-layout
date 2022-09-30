@@ -9,10 +9,10 @@ function Footer(){
     return (
         <footer>
             <div>
-                <Logo source="../images/logo-two.svg" />
+                <Logo source="logo-two.svg" />
                 
-                <Contact source="../images/icon-phone.svg" contact="Phone: +1-543-123-4567" />
-                <Contact source="../images/icon-email.svg" contact="example@fylo.com" />
+                <Contact source="icon-phone.svg" contact="Phone: +1-543-123-4567" />
+                <Contact source="icon-email.svg" contact="example@fylo.com" />
 
             </div>
             <div className="linkes">
@@ -33,9 +33,9 @@ function Footer(){
             </div>
 
             <div className="sociales">
-                <Icon url="" source="../images/facebook.svg" />
-                <Icon url="" source="../images/square-twitter.svg" />
-                <Icon url="" source="../images/instagram.svg" />
+                <Icon url="" source="facebook.svg" />
+                <Icon url="" source="square-twitter.svg" />
+                <Icon url="" source="instagram.svg" />
             </div>
 
         </footer>
